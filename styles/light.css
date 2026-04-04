@@ -1,12 +1,33 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --general-color: #353430;
+  --font-main-title-color: #ffc2e6;
+  --menu-color: var(--general-color);
+  --accent-color: #ff8dcb;
+  --shadow-color: var(--accent-color);
+  --aricles-text-color: var(--general-color);
+  --section-text-color: var(--general-color);
+  --card-text-color: var(--general-color);
+  --hover-color: rgba(50, 49, 45, 0.4);
+  --bg-color: #fff1f7;
+  --background-image: url("../images/cover-image-light.png");
+  --recording-flag: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not(.theme-dark) { 
+    /* :not(.theme-dark) - чтобы кнопка "Темная" 
+       всегда имела приоритет над системным "Авто" */
+    --general-color: #353430;
+    --font-main-title-color: #ffc2e6;
+    --menu-color: var(--general-color);
+    --accent-color: #ff8dcb;
+    --shadow-color: var(--accent-color);
+    --aricles-text-color: var(--general-color);
+    --section-text-color: var(--general-color);
+    --card-text-color: var(--general-color);
+    --hover-color: rgba(50, 49, 45, 0.4);
+    --bg-color: #fff1f7;
+    --background-image: url("../images/cover-image-light.png");
+    --recording-flag: none;
+    }
 }
