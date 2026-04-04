@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: var(--font-family);
+  font-family: var(--font-family), 'Inconsolata', 'Consolas', 'Monaco', 'Courier New', monospace;
   color: var(--font-ini-color);
   font-size: 18px;
   font-weight: 400;

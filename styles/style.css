@@ -18,12 +18,11 @@
 /* основное название в хедере и футере */
 .main-title {
   color: var(--font-main-title-color);
-  font-family: var(--font-family);
+  font-family: var(--font-family), 'Inconsolata', 'Consolas', 'Monaco', 'Courier New', monospace;
   font-weight: 700;
   font-size: var(--font-main-title-size);
   line-height: var(--line-height-main-title);
   text-transform: lowercase;
-  text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 .title-decor {
@@ -75,6 +74,7 @@
   color: var(--menu-color);
   line-height: 1.39;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .header__recording-flag::after {
@@ -106,19 +106,20 @@
   justify-content: space-between;
   align-items: center;
   width: 70px;
-  height: 95px;
+  gap: 13px;  /* +3 под макет */
   margin-top: 6px;  /* правка под макет */
 }
 
 .header__theme-menu-button {
   width: 70px;
-  height: 23px;
+  min-height: 23px;
   border: none;
   color: var(--menu-color);
-  font-family: var(--font-family);
+  font-family: var(--font-family), 'Inconsolata', 'Consolas', 'Monaco', 'Courier New', monospace;
   line-height: 100%;
   text-align: center;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .header__theme-menu-button_active {
@@ -137,6 +138,10 @@ button:focus-visible {
 
 .intext-link:focus-visible {
   border: 1px solid var(--menu-color);
+}
+
+.header__title {
+  text-shadow: 4px 4px 0 var(--shadow-color);
 }
 
 .header__text_block {
@@ -165,6 +170,10 @@ button:focus-visible {
   gap: var(--title-article-between-gap);
 }
 
+.card__text p:not(:last-child) {
+  margin-bottom: 10px;
+}
+
 .content__picture-block {
   display: grid;
   gap: var(--title-pictures-between-gap);
@@ -172,7 +181,7 @@ button:focus-visible {
 
 /* заголовки секций */
 .content__subheader {
-  font-family: var(--font-family);
+  font-family: var(--font-family), 'Inconsolata', 'Consolas', 'Monaco', 'Courier New', monospace;
   font-weight: 700;
   font-size: 18px;
   line-height: 130%;
@@ -213,6 +222,10 @@ button:focus-visible {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.footer__title {
+  text-shadow: 2px 2px 0 var(--shadow-color);
 }
 
 @media (376px <= width < 768px) {
@@ -261,10 +274,10 @@ button:focus-visible {
     grid-template-columns: 1fr 2fr;
     gap: var(--articles-between-gap);
   }
-  .content__even-article-block .section__header {
+  .content__sides-expandable-block .section__header {
     grid-column: 1;
   }
-  .content__even-article-block .card__article-block {
+  .content__sides-expandable-block .card__article-block {
     grid-column: span 2;
   }
 }

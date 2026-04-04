@@ -14,9 +14,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root:not(.theme-dark) { 
-    /* :not(.theme-dark) - чтобы кнопка "Темная" 
-       всегда имела приоритет над системным "Авто" */
+  :root { 
     --general-color: #353430;
     --font-main-title-color: #ffc2e6;
     --menu-color: var(--general-color);

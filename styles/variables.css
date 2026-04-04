@@ -1,6 +1,6 @@
 :root {
   /* Переменные общие */
-  --font-family: 'IBM Plex mono';
+  --font-family: 'IBM Plex mono', 'Inconsolata', 'Consolas', 'Monaco', 'Courier New', monospace;
   --font-main-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --line-height-main-title: 83%;
   --font-ini-color: black;
