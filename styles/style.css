@@ -323,12 +323,12 @@ button:focus-visible {
     margin-top: -20px;  /* правка под макет */
     padding-right: 0;  /* подправил переносы чтоб было как в макете */
   }
-  .content__even-article-block {
+  .content__sides-expandable-block {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
-  .content__even-article-block .card__article-block{
+  .content__sides-expandable-block .card__article-block{
     grid-template-columns: repeat(3, 1fr);
     grid-column: span 3;
     grid-row: 2;
