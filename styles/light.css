@@ -1,5 +1,6 @@
 :root.theme-light {
   --general-color: #353430;
+  --font-ini-color: var(--general-color);
   --font-main-title-color: #ffc2e6;
   --menu-color: var(--general-color);
   --accent-color: #ff8dcb;
@@ -9,13 +10,14 @@
   --card-text-color: var(--general-color);
   --hover-color: rgba(50, 49, 45, 0.4);
   --bg-color: #fff1f7;
-  --background-image: url("../images/cover-image-light.png");
+  --background-image: url('../images/cover-image-light.png');
   --recording-flag: none;
 }
 
 @media (prefers-color-scheme: light) {
   :root { 
     --general-color: #353430;
+    --font-ini-color: var(--general-color);
     --font-main-title-color: #ffc2e6;
     --menu-color: var(--general-color);
     --accent-color: #ff8dcb;
@@ -25,7 +27,7 @@
     --card-text-color: var(--general-color);
     --hover-color: rgba(50, 49, 45, 0.4);
     --bg-color: #fff1f7;
-    --background-image: url("../images/cover-image-light.png");
+    --background-image: url('../images/cover-image-light.png');
     --recording-flag: none;
     }
 }

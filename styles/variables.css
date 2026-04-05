@@ -3,7 +3,6 @@
   --font-family: 'IBM Plex mono', 'Inconsolata', 'Consolas', 'Monaco', 'Courier New', monospace;
   --font-main-title-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --line-height-main-title: 83%;
-  --font-ini-color: black;
   --header-footer-min-height: 668px;
   --header-footer-vh-height: 100vh;
   --indentation: 10px;
@@ -12,16 +11,19 @@
   --articles-between-gap: 20px;
   --title-pictures-between-gap: 10px;
   --title-article-between-gap: 20px;
+  /* --font-ini-color: #000028; */
 
   /* Переменные из темной темы */
+  --font-ini-color: #000028;
   --font-main-title-color: #db00ff;
   --menu-color: #ff0070;
   --accent-color: #ff0070;
   --shadow-color: var(--accent-color);
   --section-text-color: var(--accent-color);
   --card-text-color: #f1b2ce;
+  --text-link-border-color: #f1b2ce;
   --hover-color: rgba(255, 0, 112, 0.4);
   --bg-color: #000028;
-  --background-image: url("../images/cover-image-dark.png");
+  --background-image: url('../images/cover-image-dark.png');
   --recording-flag: flex;
 }
